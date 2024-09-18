@@ -24,11 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <RecoilProvider>
-        <body className={`${geistSans.variable} ${geistMono.variable}`}>
-          {children}
-        </body>
-      </RecoilProvider>
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <RecoilProvider>{children}</RecoilProvider>
+      </body>
     </html>
   );
 }
